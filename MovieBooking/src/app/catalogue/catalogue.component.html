@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Movies</title>
+</head>
+<body>
+    <div class="container">
+        <h1>List of Movies</h1>
+        <select size="1" [(ngModel)]="location">
+            <option>Select Movie</option>
+            <option value="SitaRamam">Sita Ramam</option>
+            <option value="Jailer">Jailer</option>
+            <option value="Beast">Beast</option>
+            <option value="Racegurram">Racegurram</option>
+            <option value="RRR">RRR</option>
+            <option value="Sahoo">Sahoo</option>
+        </select>
+        <br>
+        <b>Cast Details:</b>
+        <div *ngIf="location === 'SitaRamam'">
+            <p>
+                <b><i>Hero:</i></b>&nbsp;&nbsp;DQ<br>
+                <b><i>Heroine:</i></b>&nbsp;&nbsp;Mrunal Thakur<br>
+                <b><i>Director:</i></b>&nbsp;&nbsp;Hanu Raghavpudi<br>
+                <b><i>Audi No:</i></b>&nbsp;&nbsp;Screen 1<br>
+            </p>
+        </div>
+        <div *ngIf="location === 'Jailer'">
+            <p>
+                <b><i>Hero:</i></b>&nbsp;&nbsp;Rajinikanth<br>
+                <b><i>Heroine:</i></b>&nbsp;&nbsp;Ramya Krishna<br>
+                <b><i>Director:</i></b>&nbsp;&nbsp;Nelson<br>
+                <b><i>Audi No:</i></b>&nbsp;&nbsp;Screen 2<br>
+            </p>
+        </div>
+        <div *ngIf="location === 'Beast'">
+            <p>
+                <b><i>Hero:</i></b>&nbsp;&nbsp;Vijay<br>
+                <b><i>Heroine:</i></b>&nbsp;&nbsp;Pooja Hegde<br>
+                <b><i>Director:</i></b>&nbsp;&nbsp;Lokesh<br>
+                <b><i>Audi No:</i></b>&nbsp;&nbsp;Screen 3<br>
+            </p>
+        </div>
+        <div *ngIf="location === 'Racegurram'">
+            <p>
+                <b><i>Hero:</i></b>&nbsp;&nbsp;Allu Arjun<br>
+                <b><i>Heroine:</i></b>&nbsp;&nbsp;Sruthi Hasan<br>
+                <b><i>Director:</i></b>&nbsp;&nbsp;Surendar Reddy<br>
+                <b><i>Audi No:</i></b>&nbsp;&nbsp;Screen 4<br>
+            </p>
+        </div>
+        <div *ngIf="location === 'RRR'">
+            <p>
+                <b><i>Hero:</i></b>&nbsp;&nbsp;NTR,Ram Charan<br>
+                <b><i>Heroine:</i></b>&nbsp;&nbsp;Jessy,Aliabhatt<br>
+                <b><i>Director:</i></b>&nbsp;&nbsp;SS Rajamouli<br>
+                <b><i>Audi No:</i></b>&nbsp;&nbsp;Screen 5<br>
+            </p>
+        </div>
+        <div *ngIf="location === 'Sahoo'">
+            <p>
+                <b><i>Hero:</i></b>&nbsp;&nbsp;Prabhas<br>
+                <b><i>Heroine:</i></b>&nbsp;&nbsp;Shraddha Kapoor<br>
+                <b><i>Director:</i></b>&nbsp;&nbsp;Sujeeth<br>
+                <b><i>Audi No:</i></b>&nbsp;&nbsp;Screen 6<br>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

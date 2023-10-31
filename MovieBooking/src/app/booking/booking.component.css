@@ -1,0 +1,94 @@
+/* Add your custom styles here */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+
+div{
+  text-align: center;
+  
+}
+
+.customer-form input[type="text"],
+.customer-form textarea,
+.customer-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.customer-form {
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 5px solid #ccc;
+  background-color:aliceblue;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.reset-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customer-table {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customer-table td {
+  border: 1px solid #d91c1c;
+  padding: 8px;
+  text-align: center;
+}
+
+.customer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.customer-table th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+
+.booking-details {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}

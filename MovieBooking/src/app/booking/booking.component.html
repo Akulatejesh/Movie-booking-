@@ -1,0 +1,57 @@
+<h1>Customer Booking details</h1>
+
+
+<form class="customer-form">
+  <b>CustomerName:</b>&nbsp;
+  <input type="text" name="CustomerName" [(ngModel)]="CustomerName" required (blur)="verifyCustomerName($event)"
+    pattern="^[a-zA-Z\s]*$" /><br>
+  <div *ngIf="!CustomerName && CustomerName !== ''" class="error-message">
+    First name is mandatory.
+  </div>
+  <div *ngIf="CustomerName && !CustomerName.match('^[a-zA-Z\s]*$')" class="error-message">
+    Customer Name should only contain characters.
+  </div>
+
+  <br><b>MovieName:</b>&nbsp;
+  <input type="text" name="MovieName" [(ngModel)]="MovieName" required minlength="2" maxlength="50"
+    pattern="^[a-zA-Z\s]*$" /><br>
+  <div *ngIf="!MovieName && MovieName !== ''" class="error-message">
+    Movie Name is required.
+  </div>
+  <div *ngIf="MovieName && (MovieName.length < 2 || MovieName.length > 50)" class="error-message">
+    Movie Name should be between 2 and 50 characters.
+  </div>
+  <div *ngIf="MovieName && !MovieName.match('^[a-zA-Z\s]*$')" class="error-message">
+    Movie Name should only contain letters.
+  </div>
+
+  <br><b>Seats:</b>&nbsp;
+  <input type="number" name="seats" [(ngModel)]="seats" required min="1" /><br>
+  <div *ngIf="!seats" class="error-message">
+    Seats is required.
+  </div>
+  <div *ngIf="seats === 0" class="error-message">
+    Seats must be at least 1.
+  </div>
+
+  <br><b>Bookingdate:</b>&nbsp;
+  <input type="date" name="Bookingdate" [(ngModel)]="Bookingdate" required [min]="today" /><br>
+  <div *ngIf="!Bookingdate" class="error-message">
+    Booking Date is required.
+  </div>
+  <div *ngIf="Bookingdate && Bookingdate < today" class="error-message">
+    Cannot book a previous date.
+  </div>
+  
+ 
+
+  <br><br>
+  <button type="submit" class="submit-button">Submit</button>&nbsp;&nbsp;<button type="reset" class="reset-button">Reset</button>
+</form>
+<div class="bd1">
+  <h2>Booking details:</h2>
+<b>CustomerName:</b>{{ CustomerName }}<br>
+<b>MovieName:</b>{{ MovieName }}<br>
+<b>Seats:</b>{{ seats }}<br>
+<b>Bookingdate:</b>{{ Bookingdate }}
+</div>

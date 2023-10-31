@@ -1,0 +1,49 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* This will center the button vertically in the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 500px;
+    background-image: url("./moviebg.jpg");
+    background-repeat:round;
+    background-size:cover;
+    background-position: 200px;
+  }
+
+
+/* Navigation Styles */
+nav {
+  text-align:center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  background-color: whitesmoke;
+  color: black;
+  font-size: 100px;
+  font-display:inherit;
+  align-items: flex-start;
+}
+
+.customer-button {
+  background-color: #14d4ed;
+  color: #0a0909;
+  border: none;
+  padding: 20px 40px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.customer-button:hover {
+  background-color: #bad5e6;
+}
+
+/* Content Styles*/ 

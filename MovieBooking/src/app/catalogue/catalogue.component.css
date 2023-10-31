@@ -1,0 +1,53 @@
+ /* Global Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Select Styles */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Cast Details Styles */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Switch Case Styles */
+b[ngSwitchCase] {
+    color: #3498db; /* Blue */
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+    color: #e74c3c; /* Red */
+}
+
+
+

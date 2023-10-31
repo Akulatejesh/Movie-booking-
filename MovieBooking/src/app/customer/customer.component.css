@@ -1,0 +1,113 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.h1{
+  text-align: center;
+  color:black;
+}
+
+.customer-form {
+    align-content: center;
+    margin: 20px;
+    padding: 40px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    background-color: aliceblue;
+    align-items: center;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .reset-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .customer-table {
+    background-color: antiquewhite;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+  }
+  
+  .customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .customer-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+/* Apply these styles to textboxes */
+.customer-form input[type="text"],
+.customer-form textarea,
+.customer-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Apply these styles to the error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Apply these styles to the submit and reset buttons */
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Apply these styles to the table */
+
+.customer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customer-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+  

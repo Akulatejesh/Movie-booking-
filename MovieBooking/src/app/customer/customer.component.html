@@ -1,0 +1,40 @@
+<body>
+<h1 class="h1">Customer details:-</h1>
+<form class="customer-form">
+  <b>CustomerName:</b>&nbsp;
+  <input type="text" name="CustomerName" [(ngModel)]="CustomerName" required (blur)="verifyCustomerName($event)" /><br>
+  <div *ngIf="!CustomerName" class="error-message">
+    First name is mandatory.
+  </div> 
+
+  <br><b>Address:</b>&nbsp;
+  <textarea name="Address" [(ngModel)]="Address"></textarea><br>
+
+  <b>Phone:</b>&nbsp;
+  <input type="text" name="phone" [(ngModel)]="phone" pattern="^[0-9]*$" required /><br>
+  <div *ngIf="!phone || !phone.toString().match('^[0-9]*$')" class="error-message">
+    Phone must be a number.
+  </div>
+
+  <br><b>Email:</b>
+  <input type="email" name="emailid" [(ngModel)]="emailid" required /><br>
+  <div *ngIf="!emailid || !emailid.match('[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,3}$')" class="error-message">
+    Invalid email format.
+  </div>
+
+  <br><br>
+  <button type="submit" class="submit-button">Submit</button>&nbsp;&nbsp;<button type="reset" class="reset-button">Reset</button>
+</form>
+
+<table class="customer-table">
+  <th><tr><td colspan="2"><b>Submitted Details</b></td></tr>
+  <tr><td><b>Name</b>:</td><td>{{ CustomerName }}</td></tr>
+  <tr><td><b>Address:</b></td><td>{{ Address }}</td></tr>
+  <tr><td><b>Phone:</b></td><td>{{ phone }}</td></tr>
+  <tr><td><b>Email:</b></td><td>{{ emailid }}</td></tr>
+</table>
+</body>
+      
+      
+     
+   
